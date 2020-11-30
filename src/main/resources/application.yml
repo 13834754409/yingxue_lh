@@ -1,0 +1,37 @@
+server:
+  port: 8989
+  servlet:
+    context-path: /yingx
+    jsp:
+      init-parameters:
+        development: true
+
+spring:
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/yingxue?characterEncoding=UTF-8
+    username: root
+    password: root
+  servlet:
+    multipart:
+      max-file-size: 200MB
+      max-request-size: 200MB
+  redis:
+    host: 10.23.0.4
+    database: 0
+    port: 7000
+mybatis:
+  type-aliases-package: com.lih.entity
+  mapper-locations: classpath:com/lih/mapper/*.xml
+
+logging:
+  level:
+    root: info
+    com.lih.dao: debug
+    com.lih.service: debug
+    com.lih.controller: debug
