@@ -18,7 +18,8 @@ class YingxueLihApplicationTests {
         user.setStatus(5);
         dao.updateByPrimaryKeySelective(user);
         System.out.println("修改成功");
-        int a = 10;
+        int a = 1000;
+
     }
 
 }
