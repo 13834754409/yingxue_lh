@@ -17,6 +17,7 @@ class YingxueLihApplicationTests {
         user.setId("01fefdcb-72de-49ec-a1ab-bab1bc97eb58");
         user.setStatus(5);
         dao.updateByPrimaryKeySelective(user);
+        System.out.println("成功");
     }
 
 }
