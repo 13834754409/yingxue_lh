@@ -13,10 +13,12 @@ class YingxueLihApplicationTests {
     private UserDao dao;
     @Test
     void contextLoads() {
-        User user = new User();
+        User user = new  User();
         user.setId("01fefdcb-72de-49ec-a1ab-bab1bc97eb58");
         user.setStatus(5);
         dao.updateByPrimaryKeySelective(user);
+        System.out.println("修改成功");
+        int a = 10;
     }
 
 }
