@@ -66,6 +66,7 @@ public class CacheAspect {
                 throwable.printStackTrace();
             }
             //加入缓存 放入redis
+            System.out.println("放入缓存的数据:"+result);
             hashOperations.put(className,key,result);
         }
 

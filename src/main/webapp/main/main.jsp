@@ -127,6 +127,13 @@
                                         视频展示
                                     </button>
                                 </a>
+
+                                <a href="javascript:$('#content').load('${path}/video/searchVideo.jsp')"
+                                   class="list-group-item">
+                                    <button class="btn btn-warning btn-group-justified">
+                                        视频检索
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>

@@ -23,4 +23,6 @@ public interface VideoService {
 
     List<VideoPO> queryByReleaseTime();
     List<VideoPO> queryByLikeVideoName(String content);
+
+    List<Video> selectByContent(String content);
 }

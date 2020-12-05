@@ -18,6 +18,7 @@ import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -66,4 +67,13 @@ public class VideoController {
         log.debug("获取到的名字: {}",videoPath.getOriginalFilename());
         videoService.modfiyVideo(videoPath,id);
     }
+
+    @RequestMapping("searchVideo")
+    @ResponseBody
+    public List<Video> searchVideo(String content){
+        List<Video> videos = videoService.selectByContent(content);
+        return videos;
+    }
+
 }
+
